@@ -1,8 +1,6 @@
 
 import { useState, useEffect } from 'react'
-
 import comservices from './services/communications'
-
 
 const CountryNames = ({ countries }) => {
 
