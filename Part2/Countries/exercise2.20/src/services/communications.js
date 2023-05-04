@@ -1,0 +1,21 @@
+import axios from 'axios'
+
+
+const baseUrl = 'https://restcountries.com/v3.1/all'
+
+const getAll = () => {
+    const request = axios.get(baseUrl)
+    return request.then(response => response.data)
+
+}
+
+const getWeatherData = (url) => {
+    const result = axios.get(url)
+    return result.then(response => response.data)
+
+}
+const getWeatherIcon = (url) => {
+    const result = axios.get(url)
+    return result.then(response => response.data)
+}
+export default { getAll: getAll, getWeatherData: getWeatherData, getWeatherIcon: getWeatherIcon }
