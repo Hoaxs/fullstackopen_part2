@@ -122,7 +122,7 @@ function App() {
 
   let filteredPersons = [...persons]
 
-  //const baseUrl = 'http://localhost:3001/persons'
+  const baseUrl = 'http://localhost:3001/persons'
 
   //fetches 'persons' from db.json and returns a promise   
   useEffect(() => {
